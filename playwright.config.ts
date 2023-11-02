@@ -3,7 +3,7 @@ import type { PlaywrightTestConfig } from "@playwright/test";
 const config: PlaywrightTestConfig = {
   testMatch: ["tests/Homepage.ts"],
   use: {
-    headless: false,
+    headless: true,
     screenshot: "only-on-failure",
     video: "retain-on-failure",
     launchOptions: {
