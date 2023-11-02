@@ -5,7 +5,7 @@ const config: PlaywrightTestConfig = {
   use: {
     headless: false,
     screenshot: "only-on-failure",
-    video: "on",
+    video: "retain-on-failure",
     launchOptions: {
       //slowMo: 1000,
     },
