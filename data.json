@@ -1,0 +1,20 @@
+{
+  "customerLogin": {
+    "email": "darkotester@gmail.com",
+    "password": "Darko123!"
+  },
+  "item": {
+    "sku": "MT07",
+    "sku2": "MH07"
+  },
+  "hotSeller": {
+    "size": "M",
+    "color": "White"
+  },
+  "newCustomer": {
+    "firstName": "Darko",
+    "lastName": "Darkovski",
+    "password": "Darko123!",
+    "confirmPassword": "Darko123!"
+  }
+}
