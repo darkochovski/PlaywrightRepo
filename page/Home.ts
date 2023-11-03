@@ -1,4 +1,5 @@
 import { Locator, expect } from "@playwright/test";
+import { sign } from "crypto";
 import { Page } from "playwright";
 
 export default class Home {
@@ -22,7 +23,7 @@ export default class Home {
 
   public async goToCreateAnAccount() {
     await this.page
-      .locator('//div[@class="panel wrapper"]//a[text()="Create an Account"]')
+      .locator("//div[@class='panel header']//a[text()='Create an Account']")
       .click();
     await expect(
       this.page.locator("span[data-ui-id='page-title-wrapper']")
@@ -120,12 +121,11 @@ export default class Home {
   }
 
   public async signOut() {
-    await this.page
-      .getByRole("banner")
-      .locator("button")
-      .filter({ hasText: "Change" })
-      .click();
-    await this.page.getByRole("link", { name: "Sign Out" }).click();
+    const dropDown =
+      "//div[@class='panel header']//button[@class='action switch']";
+    await this.page.locator(dropDown).click();
+    const signOut = "(//a[text()[normalize-space()='Sign Out']])[1]";
+    await this.page.locator(signOut).click();
     await expect(this.page.getByText("You are signed out")).toBeVisible();
   }
 
