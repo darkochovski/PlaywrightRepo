@@ -66,7 +66,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "Log in and search for an item",
+          "title": "Navigate to menu",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,103 +80,36 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 2841,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-11-03T10:20:47.931Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "15a3090f6fc5356a2fd1-109cf478b64bb4dd1bb2",
-          "file": "tests/Homepage.ts",
-          "line": 9,
-          "column": 5
-        },
-        {
-          "title": "Add to MiniCart from HotSellers",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 5887,
+                  "duration": 865,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "\u001b[33m0\u001b[39m\n"
+                      "text": "Women\n"
                     },
                     {
-                      "text": "\u001b[33m6\u001b[39m\n"
-                    },
-                    {
-                      "text": "{ price: \u001b[32m'$34.00'\u001b[39m, size: \u001b[32m'M'\u001b[39m, color: \u001b[32m'White'\u001b[39m }\n"
+                      "text": "Tops\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-11-03T10:20:56.875Z",
+                  "startTime": "2023-11-06T10:41:25.987Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "15a3090f6fc5356a2fd1-094d61e1fe857f7b9760",
+          "id": "15a3090f6fc5356a2fd1-3223b0f59bce56d61b4b",
           "file": "tests/Homepage.ts",
-          "line": 19,
-          "column": 5
-        },
-        {
-          "title": "Log in to verify the user exist after new registration",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 10402,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-11-03T10:21:02.764Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "15a3090f6fc5356a2fd1-815d4a4b353cd1dc3ddb",
-          "file": "tests/Homepage.ts",
-          "line": 34,
-          "column": 5
+          "line": 48,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-11-03T10:20:47.167Z",
-    "duration": 27370.943
+    "startTime": "2023-11-06T10:41:25.271Z",
+    "duration": 10656.992
   }
 }

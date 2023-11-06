@@ -44,3 +44,8 @@ test("Log in to verify the user exist after new registration", async () => {
   await homepage.signOut();
   await homepage.customerLogin(customer.email, customer.password);
 });
+
+test("Navigate to menu", async () => {
+  const homepage = new Home(page);
+  await homepage.navigateMenu("Women", "Tops");
+});

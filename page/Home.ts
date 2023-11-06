@@ -124,7 +124,7 @@ export default class Home {
     const dropDown =
       "//div[@class='panel header']//button[@class='action switch']";
     await this.page.locator(dropDown).click();
-    const signOut = "(//a[text()[normalize-space()='Sign Out']])[1]";
+    const signOut = "(//li[@class='authorization-link']//a)[1]";
     await this.page.locator(signOut).click();
     await expect(this.page.getByText("You are signed out")).toBeVisible();
   }
@@ -206,5 +206,30 @@ export default class Home {
       ).toBeVisible();
       return { price, size, color };
     }
+  }
+
+  public async navigateMenu(
+    category: string,
+    subcategory?: string,
+    subsubcategory?: string
+  ) {
+    const elementsToHover = [category, subcategory, subsubcategory].filter(
+      (element) => element !== undefined
+    );
+    let title;
+    for (const elementName of elementsToHover) {
+      const element = await this.page.getByRole("menuitem", {
+        name: elementName,
+      });
+      title = elementName;
+      console.log(elementName);
+      if (elementName === elementsToHover[elementsToHover.length - 1]) {
+        await element.click();
+      } else {
+        await element.hover();
+      }
+    }
+    const titleName = `//div[@class='page-title-wrapper']//span[text()='${title}']`;
+    await expect(this.page.locator(titleName)).toBeVisible();
   }
 }
