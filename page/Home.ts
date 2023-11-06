@@ -22,9 +22,10 @@ export default class Home {
   }
 
   public async goToCreateAnAccount() {
-    await this.page
-      .locator("//div[@class='panel header']//a[text()='Create an Account']")
-      .click();
+    const createAccountLocator =
+      "//div[@class='panel header']//a[text()='Create an Account']";
+    const createAccountElement = await this.page.locator(createAccountLocator);
+    await createAccountElement.click();
     await expect(
       this.page.locator("span[data-ui-id='page-title-wrapper']")
     ).toHaveText("Create New Customer Account");
@@ -124,7 +125,8 @@ export default class Home {
     const dropDown =
       "//div[@class='panel header']//button[@class='action switch']";
     await this.page.locator(dropDown).click();
-    const signOut = "(//li[@class='authorization-link']//a)[1]";
+    const signOut =
+      "(//ul[@class='header links']//a[contains(text(),'Sign Out')])[1]";
     await this.page.locator(signOut).click();
     await expect(this.page.getByText("You are signed out")).toBeVisible();
   }

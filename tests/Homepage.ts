@@ -31,6 +31,11 @@ test("Add to MiniCart from HotSellers", async () => {
   await homepage.goToHomepage();
 });
 
+test("Navigate to menu", async () => {
+  const homepage = new Home(page);
+  await homepage.navigateMenu("Women", "Tops");
+});
+
 test("Log in to verify the user exist after new registration", async () => {
   const homepage = new Home(page);
   await homepage.signOut();
@@ -43,9 +48,4 @@ test("Log in to verify the user exist after new registration", async () => {
   );
   await homepage.signOut();
   await homepage.customerLogin(customer.email, customer.password);
-});
-
-test("Navigate to menu", async () => {
-  const homepage = new Home(page);
-  await homepage.navigateMenu("Women", "Tops");
 });

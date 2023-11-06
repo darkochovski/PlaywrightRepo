@@ -66,6 +66,80 @@
       "line": 0,
       "specs": [
         {
+          "title": "Log in and search for an item",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 4132,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-06T11:27:22.325Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "15a3090f6fc5356a2fd1-109cf478b64bb4dd1bb2",
+          "file": "tests/Homepage.ts",
+          "line": 9,
+          "column": 5
+        },
+        {
+          "title": "Add to MiniCart from HotSellers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 7410,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[33m0\u001b[39m\n"
+                    },
+                    {
+                      "text": "\u001b[33m0\u001b[39m\n"
+                    },
+                    {
+                      "text": "\u001b[90mundefined\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-06T11:27:37.177Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "15a3090f6fc5356a2fd1-094d61e1fe857f7b9760",
+          "file": "tests/Homepage.ts",
+          "line": 19,
+          "column": 5
+        },
+        {
           "title": "Navigate to menu",
           "ok": true,
           "tags": [],
@@ -80,7 +154,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 865,
+                  "duration": 1943,
                   "errors": [],
                   "stdout": [
                     {
@@ -92,7 +166,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-11-06T10:41:25.987Z",
+                  "startTime": "2023-11-06T11:27:44.589Z",
                   "attachments": []
                 }
               ],
@@ -101,15 +175,47 @@
           ],
           "id": "15a3090f6fc5356a2fd1-3223b0f59bce56d61b4b",
           "file": "tests/Homepage.ts",
-          "line": 48,
-          "column": 6
+          "line": 34,
+          "column": 5
+        },
+        {
+          "title": "Log in to verify the user exist after new registration",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 14024,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-06T11:27:46.535Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "15a3090f6fc5356a2fd1-815d4a4b353cd1dc3ddb",
+          "file": "tests/Homepage.ts",
+          "line": 39,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-11-06T10:41:25.271Z",
-    "duration": 10656.992
+    "startTime": "2023-11-06T11:27:21.579Z",
+    "duration": 40787.547999999995
   }
 }
